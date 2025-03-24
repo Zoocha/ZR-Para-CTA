@@ -1,0 +1,36 @@
+uuid: db8ca1e8-e326-4aea-bdbd-604d4723c700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_to_action.field_copy
+    - field.field.paragraph.call_to_action.field_link
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - linkit
+id: paragraph.call_to_action.default
+targetEntityType: paragraph
+bundle: call_to_action
+mode: default
+content:
+  field_copy:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: linkit
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      linkit_profile: default
+      linkit_auto_link_text: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

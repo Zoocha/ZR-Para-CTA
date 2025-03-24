@@ -1,0 +1,36 @@
+uuid: 43b55d25-a4be-48db-801a-cd58e33e53df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_to_action.field_copy
+    - field.field.paragraph.call_to_action.field_link
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - linkit
+id: paragraph.call_to_action.default
+targetEntityType: paragraph
+bundle: call_to_action
+mode: default
+content:
+  field_copy:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: linkit
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+      linkit_profile: default
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

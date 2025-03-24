@@ -1,0 +1,10 @@
+name: 'ZC Call To Action Paragraph'
+description: 'Installs Zoocha Call To Action Paragraph Component'
+type: 'Feature'
+install:
+  - linkit
+recipes:
+  - zoocha-paragraph-bundle
+
+config:
+  strict: false
